@@ -1,0 +1,133 @@
+{
+  "projectType": "saas",
+  "projectName": "discord.place",
+  "projectDescription": "A comprehensive hub for Discord resources including bot listings, server discovery, emoji library, templates, themes, and profile customization.",
+  "theme": "almond",
+  "primaryColor": "#5f69f4",
+  "lightColor": "#acb4fc",
+  "darkColor": "#fefefe",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "quickstart"]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/bots",
+              "features/servers",
+              "features/emojis",
+              "features/sounds",
+              "features/templates",
+              "features/themes",
+              "features/profiles"
+            ]
+          },
+          {
+            "group": "Self-Hosting",
+            "pages": [
+              "self-hosting/prerequisites",
+              "self-hosting/installation",
+              "self-hosting/configuration",
+              "self-hosting/deployment"
+            ]
+          },
+          {
+            "group": "Premium",
+            "pages": [
+              "premium/overview",
+              "premium/features"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/rate-limits",
+              "api/errors"
+            ]
+          },
+          {
+            "group": "Bots",
+            "pages": [
+              "api/bots/update-stats"
+            ]
+          },
+          {
+            "group": "Emojis",
+            "pages": [
+              "api/emojis/list",
+              "api/emojis/get"
+            ]
+          },
+          {
+            "group": "Servers",
+            "pages": [
+              "api/servers/list",
+              "api/servers/get"
+            ]
+          },
+          {
+            "group": "Sounds",
+            "pages": [
+              "api/sounds/list",
+              "api/sounds/get"
+            ]
+          },
+          {
+            "group": "Templates",
+            "pages": [
+              "api/templates/list",
+              "api/templates/get"
+            ]
+          },
+          {
+            "group": "Profiles",
+            "pages": [
+              "api/profiles/get"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Discord bot directory with search and filtering",
+    "Server listing and discovery platform",
+    "Emoji library with categorization and download",
+    "Sound effects library for Discord",
+    "Server templates marketplace",
+    "Profile themes and customization",
+    "Premium membership system",
+    "REST API with authentication",
+    "Real-time statistics and analytics",
+    "Review and rating system",
+    "User authentication via Discord OAuth2",
+    "Dashboard for managing submissions"
+  ],
+  "publicApiSurface": [
+    "PATCH /bots/{id}/stats - Update bot statistics",
+    "GET /emojis - List emojis",
+    "GET /emojis/{id} - Get emoji details",
+    "GET /servers - List servers",
+    "GET /servers/{id} - Get server details",
+    "GET /sounds - List sounds",
+    "GET /sounds/{id} - Get sound details",
+    "GET /templates - List templates",
+    "GET /templates/{id} - Get template details",
+    "GET /profiles/{id} - Get user profile",
+    "POST /auth/login - Discord OAuth2 authentication",
+    "GET /auth/callback - OAuth2 callback",
+    "POST /auth/refresh - Refresh authentication token"
+  ]
+}
